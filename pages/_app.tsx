@@ -12,8 +12,12 @@ import siteMetadata from '@/data/siteMetadata'
 import { Analytics } from 'pliny/analytics'
 import { SearchProvider } from 'pliny/search'
 import LayoutWrapper from '@/components/LayoutWrapper'
+import { useEffect } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    import('preline')
+  }, [])
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
