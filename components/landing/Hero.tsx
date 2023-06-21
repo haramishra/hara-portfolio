@@ -42,7 +42,7 @@ function HeroSection(props: { data: LandingDataTypes }) {
 
           {/* <!-- Title --> */}
           <div className="mx-auto mt-5 max-w-3xl text-center">
-            <h1 className="block text-4xl font-bold text-gray-800 dark:text-gray-200 md:text-5xl lg:text-7xl">
+            <h1 className="block text-4xl font-bold text-gray-800 dark:text-gray-200  md:text-5xl lg:text-7xl">
               {data.title}
             </h1>
           </div>
@@ -56,9 +56,14 @@ function HeroSection(props: { data: LandingDataTypes }) {
           <div className="mt-8 grid w-full gap-3 sm:inline-flex sm:justify-center">
             <Link
               href={data.actionMain.url}
-              className="inline-flex items-center justify-center gap-x-3 rounded-full border border-transparent bg-gradient-to-tl from-blue-600 to-violet-600 px-4 py-3 text-center text-sm font-medium text-white hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg p-4 px-5 py-3 font-medium text-indigo-600 "
             >
-              {data.actionMain.title}
+              <span className="ease absolute left-0 top-0 -ml-3 -mt-10 h-40 w-40 rounded-full bg-red-500 blur-md transition-all duration-700"></span>
+              <span className="ease absolute inset-0 h-full w-full transition duration-700 group-hover:rotate-180">
+                <span className="absolute bottom-0 left-0 -ml-10 h-24 w-24 rounded-full bg-purple-500 blur-md"></span>
+                <span className="absolute bottom-0 right-0 -mr-10 h-24 w-24 rounded-full bg-pink-500 blur-md"></span>
+              </span>
+              <span className="relative text-white">{data.actionMain.title}</span>
             </Link>
           </div>
           {/* <!-- End Buttons --> */}
