@@ -7,8 +7,13 @@ function ProjectsSection() {
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         {/* <!-- Grid --> */}
         <div className="">
-          <RevealList interval={60} delay={50} reset className=" grid gap-6 sm:grid-cols-12">
-            <div className="col-span-12 sm:col-span-7 sm:self-end md:col-span-8 lg:col-span-5 lg:col-start-3">
+          <RevealList
+            interval={60}
+            delay={1000}
+            duration={1000}
+            className=" grid gap-6 sm:grid-cols-12"
+          >
+            <div className="load-hidden col-span-12 sm:col-span-7  sm:self-end md:col-span-8 lg:col-span-5 lg:col-start-3">
               {/* <!-- Card --> */}
               <a className="group relative block overflow-hidden rounded-xl" href="#">
                 <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden rounded-xl">
@@ -28,7 +33,7 @@ function ProjectsSection() {
             </div>
             {/* <!-- End Col --> */}
 
-            <div className="col-span-12 sm:col-span-5 sm:self-end md:col-span-4 lg:col-span-3">
+            <div className="load-hidden col-span-12 sm:col-span-5  sm:self-end md:col-span-4 lg:col-span-3">
               {/* <!-- Card --> */}
               <a className="group relative block overflow-hidden rounded-xl" href="#">
                 <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden rounded-xl">
@@ -48,7 +53,7 @@ function ProjectsSection() {
             </div>
             {/* <!-- End Col --> */}
 
-            <div className="col-span-12 md:col-span-4">
+            <div className="load-hidden col-span-12 md:col-span-4 ">
               {/* <!-- Card --> */}
               <a className="group relative block overflow-hidden rounded-xl" href="#">
                 <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden rounded-xl">
@@ -68,7 +73,7 @@ function ProjectsSection() {
             </div>
             {/* <!-- End Col --> */}
 
-            <div className="col-span-12 sm:col-span-6 md:col-span-4">
+            <div className="load-hidden col-span-12 sm:col-span-6 md:col-span-4 ">
               {/* <!-- Card --> */}
               <a className="group relative block overflow-hidden rounded-xl" href="#">
                 <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden rounded-xl">
@@ -88,7 +93,7 @@ function ProjectsSection() {
             </div>
             {/* <!-- End Col --> */}
 
-            <div className="col-span-12 sm:col-span-6 md:col-span-4">
+            <div className="load-hidden col-span-12 sm:col-span-6 md:col-span-4 ">
               {/* <!-- Card --> */}
               <a className="group relative block overflow-hidden rounded-xl" href="#">
                 <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden rounded-xl">
