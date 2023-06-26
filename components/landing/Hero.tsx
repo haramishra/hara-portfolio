@@ -1,9 +1,15 @@
 import { LandingDataTypes } from '@/data/landingData'
 import { RevealList } from 'next-reveal'
 import Link from 'next/link'
+import BgImageDark from '../../public/static/images/hero-bg-dark.svg'
+import BgImageLight from '../../public/static/images/hero-bg-light.svg'
+import Image from 'next/image'
+import { useTheme } from 'next-themes'
+// import Image from '@/components/Image'
 
 function HeroSection(props: { data: LandingDataTypes }) {
   const { data } = props
+  const { theme } = useTheme()
   return (
     <>
       {/* <!-- Hero --> */}
@@ -11,6 +17,9 @@ function HeroSection(props: { data: LandingDataTypes }) {
         className={`relative overflow-hidden before:absolute before:left-1/2 before:top-0 before:-z-[1] before:h-full before:w-full before:-translate-x-1/2 before:transform before:bg-[url("")] before:bg-top before:bg-no-repeat dark:before:bg-[url('')]`}
       >
         <div className="mx-auto max-w-[85rem] px-4 pb-10 pt-24 sm:px-6 lg:px-8">
+          {/* <div className="absolute inset-0 flex items-center justify-center">
+            {theme === 'dark' ? <BgImageDark /> : <BgImageLight />}
+          </div> */}
           {/* <!-- Announcement Banner --> */}
           <RevealList
             // rotate={{ x: 12, y: 40, z: 0 }}

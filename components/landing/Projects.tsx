@@ -11,6 +11,7 @@ function ProjectsSection() {
             interval={60}
             delay={1000}
             duration={1000}
+            useDelay='onload'
             className=" grid gap-6 sm:grid-cols-12"
           >
             <div className="load-hidden col-span-12 sm:col-span-7  sm:self-end md:col-span-8 lg:col-span-5 lg:col-start-3">
