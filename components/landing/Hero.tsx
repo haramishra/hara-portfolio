@@ -14,7 +14,7 @@ function HeroSection(props: { data: LandingDataTypes }) {
     <>
       {/* <!-- Hero --> */}
       <div
-        className={`relative overflow-hidden before:absolute before:left-1/2 before:top-0 before:-z-[1] before:h-full before:w-full before:-translate-x-1/2 before:transform before:bg-[url("")] before:bg-top before:bg-no-repeat dark:before:bg-[url('')]`}
+        className={`relative overflow-hidden before:absolute before:left-1/2 before:top-0 before:-z-[1] before:h-full before:w-full before:-translate-x-1/2 before:transform before:bg-top before:bg-no-repeat`}
       >
         <div className="mx-auto max-w-[85rem] px-4 pb-10 pt-24 sm:px-6 lg:px-8">
           {/* <div className="absolute inset-0 flex items-center justify-center">
