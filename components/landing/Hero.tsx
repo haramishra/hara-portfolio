@@ -34,7 +34,7 @@ function HeroSection(props: { data: LandingDataTypes }) {
           >
             <div className="load-hidden flex justify-center ">
               <Link
-                className="inline-flex items-center gap-x-2 rounded-full border border-gray-200 bg-white p-2 px-3 text-xs text-gray-600 transition hover:border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600"
+                className="inline-flex items-center gap-x-2 rounded-full border border-gray-200 bg-white p-2 px-3 text-xs text-gray-600 backdrop-blur-lg transition hover:border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600"
                 href={data.actionSub.url}
               >
                 {data.actionSub.title}

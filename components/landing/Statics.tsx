@@ -66,7 +66,7 @@ function Stats() {
           <div className="mt-10 lg:col-span-6 lg:col-end-13 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
               {/* <!-- List --> */}
-              <ul className="grid grid-cols-2 divide-x divide-x-2 divide-y divide-y-2 divide-gray-200 overflow-hidden dark:divide-gray-700">
+              <ul className="grid grid-cols-2 divide-x-2 divide-y-2 divide-gray-200 overflow-hidden dark:divide-gray-700">
                 <li className="-m-0.5 flex flex-col p-4 sm:p-8">
                   <div className="mb-2 flex items-end gap-x-2 text-3xl font-bold text-gray-800 dark:text-gray-200 sm:text-5xl">
                     45k+

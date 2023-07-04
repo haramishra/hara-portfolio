@@ -11,7 +11,7 @@ function ProjectsSection() {
             interval={60}
             delay={1000}
             duration={1000}
-            useDelay='onload'
+            useDelay="onload"
             className=" grid gap-6 sm:grid-cols-12"
           >
             <div className="load-hidden col-span-12 sm:col-span-7  sm:self-end md:col-span-8 lg:col-span-5 lg:col-start-3">
@@ -25,7 +25,7 @@ function ProjectsSection() {
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
-                  <div className="rounded-lg bg-white p-4 text-sm font-bold text-gray-800 dark:bg-gray-800 dark:text-gray-200 md:text-xl">
+                  <div className="rounded-lg p-4 text-sm font-bold text-gray-200  backdrop-blur-lg md:text-xl">
                     Workplace personalities
                   </div>
                 </div>
@@ -45,7 +45,7 @@ function ProjectsSection() {
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
-                  <div className="rounded-lg bg-white p-4 text-sm font-bold text-gray-800 dark:bg-gray-800 dark:text-gray-200 md:text-xl">
+                  <div className="rounded-lg p-4 text-sm font-bold text-gray-200  backdrop-blur-lg md:text-xl">
                     Women in engineering
                   </div>
                 </div>
@@ -65,7 +65,7 @@ function ProjectsSection() {
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
-                  <div className="rounded-lg bg-white p-4 text-sm font-bold text-gray-800 dark:bg-gray-800 dark:text-gray-200 md:text-xl">
+                  <div className="rounded-lg p-4 text-sm font-bold text-gray-200  backdrop-blur-lg md:text-xl">
                     Pride 2021
                   </div>
                 </div>
@@ -85,7 +85,7 @@ function ProjectsSection() {
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
-                  <div className="rounded-lg bg-white p-4 text-sm font-bold text-gray-800 dark:bg-gray-800 dark:text-gray-200 md:text-xl">
+                  <div className="rounded-lg p-4 text-sm font-bold text-gray-200  backdrop-blur-lg md:text-xl">
                     Data at Preline
                   </div>
                 </div>
@@ -105,7 +105,7 @@ function ProjectsSection() {
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
-                  <div className="rounded-lg bg-white p-4 text-sm font-bold text-gray-800 dark:bg-gray-800 dark:text-gray-200 md:text-xl">
+                  <div className="rounded-lg p-4 text-sm font-bold text-gray-200  backdrop-blur-lg md:text-xl">
                     Empowered management
                   </div>
                 </div>
