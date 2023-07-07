@@ -1,4 +1,5 @@
 import { RevealList } from 'next-reveal'
+import Image from 'next/image'
 
 function ProjectsSection() {
   return (
@@ -14,21 +15,23 @@ function ProjectsSection() {
             useDelay="onload"
             className=" grid gap-6 sm:grid-cols-12"
           >
-            <div className="load-hidden col-span-12 sm:col-span-7  sm:self-end md:col-span-8 lg:col-span-5 lg:col-start-3">
+            <div className="load-hidden col-span-12 sm:col-span-7  sm:self-end md:col-span-8 lg:col-span-6 lg:col-start-3">
               {/* <!-- Card --> */}
               <a className="group relative block overflow-hidden rounded-xl" href="#">
                 <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden rounded-xl">
-                  <img
+                  <Image
                     className="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                    src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3481&q=80"
+                    src="/static/images/mindlyLogo.jpg"
+                    width={130}
+                    height={85}
                     alt="Image Description"
                   />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                {/* <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
                   <div className="rounded-lg p-4 text-sm font-bold text-gray-200  backdrop-blur-lg md:text-xl">
-                    Workplace personalities
+                    Anonymous social media
                   </div>
-                </div>
+                </div> */}
               </a>
               {/* <!-- End Card --> */}
             </div>
@@ -96,7 +99,7 @@ function ProjectsSection() {
 
             <div className="load-hidden col-span-12 sm:col-span-6 md:col-span-4 ">
               {/* <!-- Card --> */}
-              <a className="group relative block overflow-hidden rounded-xl" href="#">
+              {/* <a className="group relative block overflow-hidden rounded-xl" href="#">
                 <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden rounded-xl">
                   <img
                     className="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -109,7 +112,7 @@ function ProjectsSection() {
                     Empowered management
                   </div>
                 </div>
-              </a>
+              </a> */}
               {/* <!-- End Card --> */}
             </div>
             {/* <!-- End Col --> */}
