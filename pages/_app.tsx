@@ -13,6 +13,7 @@ import { Analytics } from 'pliny/analytics'
 import { SearchProvider } from 'pliny/search'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { useEffect } from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -20,15 +21,17 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
-      <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-      </Head>
-      <Analytics analyticsConfig={siteMetadata.analytics} />
-      <LayoutWrapper>
-        <SearchProvider searchConfig={siteMetadata.search}>
-          <Component {...pageProps} />
-        </SearchProvider>
-      </LayoutWrapper>
+      <ParallaxProvider>
+        <Head>
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
+        </Head>
+        <Analytics analyticsConfig={siteMetadata.analytics} />
+        <LayoutWrapper>
+          <SearchProvider searchConfig={siteMetadata.search}>
+            <Component {...pageProps} />
+          </SearchProvider>
+        </LayoutWrapper>
+      </ParallaxProvider>
     </ThemeProvider>
   )
 }
