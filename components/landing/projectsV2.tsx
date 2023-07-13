@@ -1,3 +1,4 @@
+import { RevealList } from 'next-reveal'
 import Image from 'next/image'
 import { Parallax } from 'react-scroll-parallax'
 
@@ -53,44 +54,45 @@ function ProjectsV2() {
     <section
       className={`relative overflow-hidden before:absolute before:left-1/2 before:top-0 before:-z-[1] before:h-full before:w-full before:-translate-x-1/2 before:transform before:bg-top before:bg-no-repeat`}
     >
-      {/* Text section */}
-      <div className="flex flex-col gap-12">
-        {/* number */}
-        <div className="block text-3xl font-bold opacity-60 md:text-4xl lg:text-6xl">01</div>
+      <RevealList interval={100} delay={500} viewOffset={{top: 60, right:0, bottom: 10, left:0}}>
+        {/* Text section */}
+        <div className="flex flex-col gap-12">
+          {/* number */}
+          <div className="block text-3xl font-bold opacity-60 md:text-4xl lg:text-6xl">01</div>
 
-        <div className="space-y-6">
-          {/* title */}
-          <h2 className="block text-3xl font-bold md:text-4xl lg:text-6xl">
-            This is the placeholder title.
-          </h2>
+          <div className="space-y-6">
+            {/* title */}
+            <h2 className="block text-3xl font-bold md:text-4xl lg:text-6xl">
+              This is the placeholder title.
+            </h2>
 
-          {/* Tags */}
-          <div className="flex items-center gap-3 text-2xl font-medium opacity-95">
-            <span>Next js</span>
-            <span className="inline-block h-2 w-2 rounded-full bg-gray-900 dark:bg-gray-200"></span>
-            <span>Appwrite</span>
-            <span className="inline-block h-2 w-2 rounded-full bg-gray-900 dark:bg-gray-200"></span>
-            <span>tailwind</span>
-            <span className="inline-block h-2 w-2 rounded-full bg-gray-900 dark:bg-gray-200"></span>
-            <span>redix ui</span>
+            {/* Tags */}
+            <div className="flex items-center gap-3 text-2xl font-medium opacity-95">
+              <span>Next js</span>
+              <span className="inline-block h-2 w-2 rounded-full bg-gray-900 dark:bg-gray-200"></span>
+              <span>Appwrite</span>
+              <span className="inline-block h-2 w-2 rounded-full bg-gray-900 dark:bg-gray-200"></span>
+              <span>tailwind</span>
+              <span className="inline-block h-2 w-2 rounded-full bg-gray-900 dark:bg-gray-200"></span>
+              <span>redix ui</span>
+            </div>
+
+            {/* Description */}
+            <p className="text-3xl font-normal opacity-90">
+              Web app project to give workplace insights using indoor localization, voice and
+              schedule.
+            </p>
           </div>
-
-          {/* Description */}
-          <p className="text-3xl font-normal opacity-90">
-            Web app project to give workplace insights using indoor localization, voice and
-            schedule.
-          </p>
         </div>
-      </div>
 
-      {/* Images section */}
-      <div className="mt-20 grid grid-cols-2 gap-8">
-        <Desktop speed={8} />
-        <Desktop speed={5} />
-
-        <Mobile speed={8} />
-        <Desktop speed={6} />
-      </div>
+        {/* Images section */}
+        <div className="mt-20 grid grid-cols-2 gap-8">
+          <Desktop speed={8} />
+          <Desktop speed={5} />
+          <Mobile speed={8} />
+          <Desktop speed={6} />
+        </div>
+      </RevealList>
     </section>
   )
 }
