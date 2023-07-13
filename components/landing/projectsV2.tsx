@@ -54,7 +54,11 @@ function ProjectsV2() {
     <section
       className={`relative overflow-hidden before:absolute before:left-1/2 before:top-0 before:-z-[1] before:h-full before:w-full before:-translate-x-1/2 before:transform before:bg-top before:bg-no-repeat`}
     >
-      <RevealList interval={100} delay={500} viewOffset={{top: 60, right:0, bottom: 10, left:0}}>
+      <RevealList
+        interval={100}
+        delay={500}
+        // viewOffset={{ top: 60, right: 0, bottom: 10, left: 0 }}
+      >
         {/* Text section */}
         <div className="flex flex-col gap-12">
           {/* number */}

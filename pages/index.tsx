@@ -12,6 +12,9 @@ import Landing from '@/components/landing/Index'
 import landginData from '@/data/landingData'
 import styles from './index.module.css'
 import clsx from 'clsx'
+import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
+import { useEffect } from 'react'
+import { Router } from 'next/router'
 
 const MAX_DISPLAY = 5
 

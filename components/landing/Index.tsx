@@ -5,21 +5,24 @@ import ProjectsSection from './Projects'
 import Stats from './Statics'
 import FeaturePosts from './FeaturedPosts'
 import ProjectsV2 from './projectsV2'
+import { RevealList } from 'next-reveal'
 
 function Landing(props: { data: LandingDataTypes }) {
   return (
     <>
       <HeroSection data={props.data} />
       <ProjectsSection />
-      <div className='space-y-16'>
+
+      <RevealList interval={0}>
         <ProjectsV2 />
-        {/* <hr className="my-12" /> */}
+        <div className="my-6"></div>
         <ProjectsV2 />
-        {/* <hr className="my-12" /> */}
+        <div className="my-6"></div>
         <ProjectsV2 />
-        {/* <hr className="my-12" /> */}
+        <div className="my-6"></div>
         <ProjectsV2 />
-      </div>
+      </RevealList>
+
       <Stats />
       <FeaturePosts />
     </>

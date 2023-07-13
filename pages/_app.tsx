@@ -14,6 +14,7 @@ import { SearchProvider } from 'pliny/search'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { ReactLenis, Lenis } from '@studio-freight/react-lenis'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <ParallaxProvider>
+      <Lenis root>
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
         </Head>
@@ -31,6 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </SearchProvider>
         </LayoutWrapper>
+      </Lenis>
       </ParallaxProvider>
     </ThemeProvider>
   )
