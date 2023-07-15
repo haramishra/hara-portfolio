@@ -22,19 +22,31 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
-      <ParallaxProvider>
-      <Lenis root>
-        <Head>
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
-        </Head>
-        <Analytics analyticsConfig={siteMetadata.analytics} />
-        <LayoutWrapper>
-          <SearchProvider searchConfig={siteMetadata.search}>
-            <Component {...pageProps} />
-          </SearchProvider>
-        </LayoutWrapper>
-      </Lenis>
-      </ParallaxProvider>
+      <ReactLenis
+        root
+        options={{
+          lerp: 0.1,
+          ease: function easeOutBack(x: number): number {
+            const c1 = 1.70158
+            const c3 = c1 + 1
+
+            return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2)
+          },
+          smoothWheel: true,
+        }}
+      >
+        <ParallaxProvider>
+          <Head>
+            <meta content="width=device-width, initial-scale=1" name="viewport" />
+          </Head>
+          <Analytics analyticsConfig={siteMetadata.analytics} />
+          <LayoutWrapper>
+            <SearchProvider searchConfig={siteMetadata.search}>
+              <Component {...pageProps} />
+            </SearchProvider>
+          </LayoutWrapper>
+        </ParallaxProvider>
+      </ReactLenis>
     </ThemeProvider>
   )
 }
