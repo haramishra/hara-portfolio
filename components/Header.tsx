@@ -8,7 +8,7 @@ import { RevealWrapper } from 'next-reveal'
 
 const Header = () => {
   return (
-    <RevealWrapper delay={2000} className="load-hidden">
+    <RevealWrapper delay={2000} className="load-hidden" useDelay='onload' >
       <header className="flex items-center justify-between py-10">
         <div>
           <Link href="/" aria-label={siteMetadata.headerTitle}>
