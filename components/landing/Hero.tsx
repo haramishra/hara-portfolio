@@ -64,9 +64,7 @@ function HeroSection(props: { data: LandingDataTypes }) {
             {/* <!-- Title --> */}
 
             <div className="load-hidden mx-auto mt-5 max-w-3xl text-center ">
-              <h1 className="block text-4xl font-bold  md:text-5xl lg:text-7xl">
-                {data.title}
-              </h1>
+              <h1 className="block text-4xl font-bold  md:text-5xl lg:text-7xl">{data.title}</h1>
             </div>
 
             {/* <!-- End Title --> */}
