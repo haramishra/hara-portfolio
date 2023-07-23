@@ -6,7 +6,6 @@ import Stats from './Statics'
 import FeaturePosts from './FeaturedPosts'
 import ProjectsV2 from './projectsV2'
 import { RevealList } from 'next-reveal'
-import FormSection from './FormSection'
 
 function Landing(props: { data: LandingDataTypes }) {
   return (
@@ -31,7 +30,6 @@ function Landing(props: { data: LandingDataTypes }) {
 
       {/* <Stats /> */}
       <FeaturePosts />
-      <FormSection />
     </>
   )
 }
