@@ -22,7 +22,7 @@ function FeaturePosts() {
               <img
                 className="absolute left-0 top-0 h-full w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-                alt="Image Description"
+                alt="Description"
               />
               <span className="absolute right-0 top-0 rounded-bl-xl rounded-tr-xl bg-gray-800 px-3 py-1.5 text-xs font-medium text-white dark:bg-gray-900">
                 Sponsored
@@ -58,7 +58,7 @@ function FeaturePosts() {
               <img
                 className="absolute left-0 top-0 h-full w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                alt="Image Description"
+                alt="Description"
               />
             </div>
 

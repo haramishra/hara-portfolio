@@ -23,7 +23,7 @@ function Desktop(props: any) {
             src="/static/images/projects/mindly/Feed-dark.png"
             height={1618}
             width={1010}
-            alt="Image Description"
+            alt="Description"
           />
         </div>
       </figure>
@@ -39,7 +39,7 @@ function Mobile(props: any) {
           <Image
             className="h-auto max-w-full rounded-[1.25rem]"
             src="/static/images/projects/mindly/landingMobile.png"
-            alt="Image Description"
+            alt="Description"
             height={280}
             width={560}
           />

@@ -24,7 +24,7 @@ function ProjectsSection() {
                     src="/static/images/mindlyLogo.jpg"
                     width={130}
                     height={85}
-                    alt="Image Description"
+                    alt="Description"
                   />
                 </div>
                 {/* <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -44,7 +44,7 @@ function ProjectsSection() {
                   <img
                     className="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-                    alt="Image Description"
+                    alt="Description"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -64,7 +64,7 @@ function ProjectsSection() {
                   <img
                     className="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                    alt="Image Description"
+                    alt="Description"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -84,7 +84,7 @@ function ProjectsSection() {
                   <img
                     className="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-                    alt="Image Description"
+                    alt="Description"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -104,7 +104,7 @@ function ProjectsSection() {
                   <img
                     className="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80"
-                    alt="Image Description"
+                    alt="Description"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
