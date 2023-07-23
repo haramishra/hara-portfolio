@@ -57,10 +57,10 @@ function ProjectsV2() {
       <RevealList
         interval={100}
         delay={500}
-        // viewOffset={{ top: 60, right: 0, bottom: 10, left: 0 }}
+        viewOffset={{ top: 60, right: 0, bottom: 10, left: 0 }}
       >
         {/* Text section */}
-        <div className="flex flex-col gap-12">
+        <div className="load-hidden flex flex-col gap-12">
           {/* number */}
           <div className="block text-3xl font-bold opacity-60 md:text-4xl lg:text-6xl">01</div>
 
@@ -90,7 +90,7 @@ function ProjectsV2() {
         </div>
 
         {/* Images section */}
-        <div className="mt-20 grid grid-cols-2 gap-8">
+        <div className="load-hidden mt-20 grid grid-cols-2 gap-8">
           <Desktop speed={8} />
           <Desktop speed={5} />
           <Mobile speed={8} />
