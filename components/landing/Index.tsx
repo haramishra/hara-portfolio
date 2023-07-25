@@ -26,6 +26,12 @@ function Landing(props: { data: LandingDataTypes }) {
         <div className="load-hidden">
           <ProjectsV2 />
         </div>
+        <div className="load-hidden">
+          <ProjectsV2 />
+        </div>
+        <div className="load-hidden">
+          <ProjectsV2 />
+        </div>
       </RevealList>
 
       {/* <Stats /> */}

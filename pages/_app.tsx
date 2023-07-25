@@ -14,12 +14,25 @@ import { SearchProvider } from 'pliny/search'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
-import { ReactLenis, Lenis } from '@studio-freight/react-lenis'
+import { ReactLenis, Lenis, useLenis } from '@studio-freight/react-lenis'
+import { useDocumentReadyState } from '@/components/hooks/useDcoumentReadyState'
 
 export default function App({ Component, pageProps }: AppProps) {
+  const lenis = useLenis((scroll: any) => scroll)
+  const docReady = useDocumentReadyState()
   useEffect(() => {
     import('preline')
   }, [])
+
+  // useEffect(() => {
+  //   lenis?.stop()
+
+  //   if (docReady === 'complete') {
+  //     lenis?.resize()
+  //     lenis?.start()
+  //   }
+  // }, [lenis, docReady])
+
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <ReactLenis

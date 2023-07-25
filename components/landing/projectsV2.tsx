@@ -4,7 +4,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 function Desktop(props: any) {
   return (
-    <Parallax easing="easeInOutCirc" {...props}>
+    // <Parallax easing="easeInOutCirc" {...props}>
       <figure className="relative z-[1] ml-auto h-auto w-[40rem] max-w-full rounded-b-lg shadow-[0_2.75rem_3.5rem_-2rem_rgb(45_55_75_/_20%),_0_0_5rem_-2rem_rgb(45_55_75_/_15%)] dark:shadow-[0_2.75rem_3.5rem_-2rem_rgb(0_0_0_/_20%),_0_0_5rem_-2rem_rgb(0_0_0_/_15%)]">
         <div className="relative flex max-w-[40rem] items-center rounded-t-lg bg-gray-800 px-24 py-2 dark:bg-gray-700">
           <div className="absolute left-4 top-2/4 flex -translate-y-1 space-x-1">
@@ -27,13 +27,13 @@ function Desktop(props: any) {
           />
         </div>
       </figure>
-    </Parallax>
+    // </Parallax>
   )
 }
 
 function Mobile(props: any) {
   return (
-    <Parallax {...props}>
+    //  <Parallax {...props}>
       <figure className="mx-auto h-auto w-60 max-w-full">
         <div className="rounded-3xl bg-gray-800 p-1.5 shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(45_55_75_/_20%),_0_2rem_4rem_-2rem_rgb(45_55_75_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(45_55_75_/_20%)] dark:bg-gray-600 dark:shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)]">
           <Image
@@ -45,7 +45,7 @@ function Mobile(props: any) {
           />
         </div>
       </figure>
-    </Parallax>
+    // {/* </Parallax> */}
   )
 }
 
@@ -57,12 +57,13 @@ function ProjectsV2() {
       <RevealList
         interval={100}
         delay={500}
-        viewOffset={{ top: 60, right: 0, bottom: 10, left: 0 }}
+        // viewOffset={{ top: 60, right: 0, bottom: 10, left: 0 }}
       >
         {/* Text section */}
         <div className="load-hidden flex flex-col gap-12">
           {/* number */}
-          <div className="block text-3xl font-bold opacity-60 md:text-4xl lg:text-6xl">01</div>
+
+          <div className="text-3xl font-bold opacity-60 md:text-4xl lg:text-6xl">01</div>
 
           <div className="space-y-6">
             {/* title */}
