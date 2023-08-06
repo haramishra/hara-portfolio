@@ -2,12 +2,9 @@ import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
 
-const MobileNav = ({navShow, onToggleNav}) => {
-  
-
+const MobileNav = ({ navShow, onToggleNav }) => {
   return (
     <div className="sm:hidden">
-      
       <div
         className={`fixed left-0 top-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
