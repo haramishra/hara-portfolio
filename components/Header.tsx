@@ -20,7 +20,7 @@ const Header = () => {
       <RevealWrapper delay={2000} className="load-hidden" useDelay="onload">
         <header className="flex items-center justify-between py-10">
           <div>
-            <Link href={siteMetadata.siteUrl} aria-label={siteMetadata.headerTitle}>
+            <Link href={"/"} aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <Logo />
