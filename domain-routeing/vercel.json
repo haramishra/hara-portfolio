@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/:match*", "destination": "https://hara-portfolio-4hp6.vercel.app/:match*" },
+    { "source": "/:match*", "destination": "https://blog.haraprasad.in/:match*" },
     { "source": "/", "destination": "https://hara-portfolio.vercel.app/" }
   ]
 }
+    
