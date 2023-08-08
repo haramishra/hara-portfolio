@@ -3,6 +3,5 @@
     { "source": "/blog/", "destination": "https://hara-portfolio-4hp6.vercel.app/" },
     { "source": "/blog/:match*", "destination": "https://hara-portfolio-4hp6.vercel.app/:match*" },
     { "source": "/", "destination": "https://hara-portfolio.vercel.app/" }
-    
   ]
 }
